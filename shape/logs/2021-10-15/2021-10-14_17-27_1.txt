@@ -1,0 +1,2 @@
+2021-10-14 17:27:23 [main] [readFileLines] [22] ERROR rutkouski.shape.reader.impl.LineFileReaderImpl - File is not found testFiles\conesList.txt
+2021-10-14 17:27:23 [main] [readFileLines] [22] ERROR rutkouski.shape.reader.impl.LineFileReaderImpl - File is not found null

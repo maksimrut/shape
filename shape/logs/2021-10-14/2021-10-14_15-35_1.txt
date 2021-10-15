@@ -1,0 +1,10 @@
+2021-10-14 15:35:34 [main] [lambda$2] [30] INFO  rutkouski.shape.parser.impl.StringToDoubleParserImpl - 
+23
+2021-10-14 15:35:34 [main] [lambda$2] [30] INFO  rutkouski.shape.parser.impl.StringToDoubleParserImpl - 
+234
+2021-10-14 15:35:34 [main] [lambda$2] [30] INFO  rutkouski.shape.parser.impl.StringToDoubleParserImpl - 
+2345
+2021-10-14 15:35:34 [main] [lambda$2] [30] INFO  rutkouski.shape.parser.impl.StringToDoubleParserImpl - 
+2331
+2021-10-14 15:35:34 [main] [lambda$2] [30] INFO  rutkouski.shape.parser.impl.StringToDoubleParserImpl - 
+2

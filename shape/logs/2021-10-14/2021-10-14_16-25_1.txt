@@ -1,0 +1,1 @@
+2021-10-14 16:25:06 [main] [parseToDouble] [22] ERROR rutkouski.shape.parser.impl.StringToDoubleParserImpl - String list for parsing is null
