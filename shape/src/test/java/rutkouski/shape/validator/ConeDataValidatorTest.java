@@ -5,7 +5,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.Test;
 
-import com.rutkouski.shape.validator.ConeDataValidator;
+import com.rutkouski.shape.validator.ConeValidator;
 
 public class ConeDataValidatorTest {
 	
@@ -15,11 +15,11 @@ public class ConeDataValidatorTest {
 	
   @Test
   public void validateDoubleCorrectTest() {
-	  assertTrue(ConeDataValidator.validateDouble(strCorrect));
+	  assertTrue(ConeValidator.validateIsCone(strCorrect));
   }
   
   @Test
   public void validateDoubleIncorrectTest() {
-	  assertFalse(ConeDataValidator.validateDouble(strIncorrect));
+	  assertFalse(ConeValidator.validateIsCone(strIncorrect));
   }
 }

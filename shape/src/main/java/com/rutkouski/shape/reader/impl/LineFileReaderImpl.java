@@ -30,6 +30,7 @@ public class LineFileReaderImpl implements LineFileReader {
 			logger.error("Failed or interrupted I/O operations ", e);
 			throw new ConeException("Failed or interrupted I/O operations", e);
 		}
+		logger.info("Reading file is successful");
 		return stringLines;
 	}
 }

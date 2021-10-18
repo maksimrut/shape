@@ -22,16 +22,19 @@ public class ConeWarehouse {
 		coneMap.put(coneId, parameters);
 	}
 
-	public ConeParameters remove(Integer coneId) {
-		return coneMap.remove(coneId);
+	public Optional<ConeParameters> remove(Integer coneId) {
+		return Optional.of(coneMap.remove(coneId));
 	}
 	
 	public Optional<ConeParameters> get(Integer coneId) {
-		Optional<ConeParameters> parameters = Optional.of(coneMap.get(coneId));
-		return parameters;
+		return Optional.of(coneMap.get(coneId));
 	}
 	
 	public Map<Integer, ConeParameters> getConeMap() {
 		return Map.copyOf(coneMap);
+	}
+	
+	public ConeParameters getParameters(Integer coneId) {
+		return coneMap.get(coneId);
 	}
 }

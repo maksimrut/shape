@@ -1,9 +1,15 @@
 package com.rutkouski.shape.entity;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.rutkouski.shape.exception.ConeException;
+import com.rutkouski.shape.observer.ConeEvent;
+import com.rutkouski.shape.observer.impl.ConeObserverImpl;
+import com.rutkouski.shape.util.IdGenerator;
 
 public class Cone {
 	
@@ -12,13 +18,17 @@ public class Cone {
 	private Point top;
 	private double radius;
 	private double height;
-	//TODO observer
+	private List<ConeObserverImpl> coneObservers = new ArrayList<>();
 	
 	public Cone(Point top, double radius, double height) {
-		super();
 		this.top = top;
 		this.radius = radius;
 		this.height = height;
+		this.coneId = IdGenerator.generateConeId();
+	}
+	
+	public int getConeId() {
+		return coneId;
 	}
 
 	public Point getTop() {
@@ -27,6 +37,7 @@ public class Cone {
 
 	public void setTop(Point top) {
 		this.top = top;
+		notifyObservers();
 	}
 
 	public double getRadius() {
@@ -35,10 +46,11 @@ public class Cone {
 
 	public void setRadius(double radius) throws ConeException {
 		if (radius < 0) {
-			logger.error("Radius can't be negative: " + radius);
+			logger.error("Radius can't be negative: {}", radius);
 			throw new ConeException("Radius can't be negative: " + radius);
 		}
 		this.radius = radius;
+		notifyObservers();
 	}
 
 	public double getHeight() {
@@ -47,10 +59,20 @@ public class Cone {
 
 	public void setHeight(double height) throws ConeException {
 		if (height < 0) {
-			logger.error("Height can't be negative: " + height);
+			logger.error("Height can't be negative: {}", height);
 			throw new ConeException("Height can't be negative: " + height);
 		}
 		this.height = height;
+		notifyObservers();
+	}
+	
+	private void notifyObservers() {
+		if (coneObservers == null) {
+			logger.info("Observer is null");
+			return;
+		}
+		ConeEvent coneEvent = new ConeEvent(this);
+		coneObservers.forEach(o -> o.changeParameters(coneEvent));
 	}
 
 	@Override
@@ -98,8 +120,4 @@ public class Cone {
 		.append(", height = ").append(height).append(")");
 		return stringBuilder.toString();
 	}
-	
-	
-	
-	
 }

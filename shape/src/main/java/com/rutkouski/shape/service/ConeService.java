@@ -2,6 +2,7 @@ package com.rutkouski.shape.service;
 
 import com.rutkouski.shape.entity.Cone;
 import com.rutkouski.shape.entity.Point;
+import com.rutkouski.shape.exception.ConeException;
 
 public interface ConeService {
 	
@@ -9,9 +10,7 @@ public interface ConeService {
 	
 	double calculateConeVolume(Cone cone);
 	
-	double calculateVolumeRatio(Cone cone, Point planePoint);
-	
-	boolean isCone(Point top, double radius, double height);
+	double calculateVolumeRatio(Cone cone, Point planePoint) throws ConeException;
 	
 	boolean isBaseOnTheXYPlane(Cone cone);
 }
