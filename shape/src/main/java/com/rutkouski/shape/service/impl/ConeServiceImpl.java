@@ -22,7 +22,7 @@ public class ConeServiceImpl implements ConeService {
 		if (planePoint.getZ() >= cone.getTop().getZ() || planePoint.getZ() <= (cone.getTop().getZ() - cone.getHeight())) {
 			throw new ConeException("The plane doesn't intersect the cone");
 		}
-		return Math.pow(cone.getHeight() / (cone.getTop().getZ() - cone.getHeight()), 3);
+		return Math.pow(cone.getHeight() / (cone.getTop().getZ() - planePoint.getZ()), 3);
 	}
 
 	@Override
