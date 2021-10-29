@@ -18,8 +18,7 @@ public class AreaConeSpecification implements ConeSpecification {
 	public boolean specify(Cone cone) {
 		
 		ConeServiceImpl coneServiceImpl = new ConeServiceImpl();
-		boolean result = coneServiceImpl.calculateConeArea(cone) >= fromArea
+		return coneServiceImpl.calculateConeArea(cone) >= fromArea
 						&& coneServiceImpl.calculateConeArea(cone) <= toArea;
-		return	result;
 	}
 }

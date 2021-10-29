@@ -1,2 +1,20 @@
-2021-10-15 01:15:38 [main] [lambda$1] [28] DEBUG rutkouski.shape.parser.impl.StringToDoubleParserImpl - 54.8   -43.6 25.4 26    3
-2021-10-15 01:15:38 [main] [lambda$1] [28] DEBUG rutkouski.shape.parser.impl.StringToDoubleParserImpl - 23  234 0. 2331 2
+2021-10-29 22:59:11 [main] [readFileLines] [39] INFO  rutkouski.shape.reader.impl.LineFileReaderImpl - Reading file is successful
+2021-10-29 22:59:11 [main] [lambda$1] [28] DEBUG rutkouski.shape.parser.impl.ConeParserImpl - 3 3 3 3 3
+2021-10-29 22:59:11 [main] [lambda$1] [28] DEBUG rutkouski.shape.parser.impl.ConeParserImpl - 12 0.5 3 4 5
+2021-10-29 22:59:11 [main] [lambda$1] [28] DEBUG rutkouski.shape.parser.impl.ConeParserImpl - 10 10.0 2 2 2
+2021-10-29 22:59:11 [main] [lambda$1] [28] DEBUG rutkouski.shape.parser.impl.ConeParserImpl - -3 -4 1 1 1
+2021-10-29 22:59:11 [main] [lambda$1] [28] DEBUG rutkouski.shape.parser.impl.ConeParserImpl - 0.2 0.2 32 32 23
+2021-10-29 22:59:11 [main] [lambda$1] [28] DEBUG rutkouski.shape.parser.impl.ConeParserImpl - 5 6 6 4 8
+2021-10-29 22:59:11 [main] [lambda$1] [28] DEBUG rutkouski.shape.parser.impl.ConeParserImpl - 1.3 2.55 65 42 15
+2021-10-29 22:59:11 [main] [lambda$1] [28] DEBUG rutkouski.shape.parser.impl.ConeParserImpl - 1 1 1 1 1
+2021-10-29 22:59:11 [main] [parseCone] [31] INFO  rutkouski.shape.parser.impl.ConeParserImpl - Parsing data is successful
+2021-10-29 22:59:27 [main] [readFileLines] [39] INFO  rutkouski.shape.reader.impl.LineFileReaderImpl - Reading file is successful
+2021-10-29 22:59:27 [main] [lambda$1] [28] DEBUG rutkouski.shape.parser.impl.ConeParserImpl - 3 3 3 3 3
+2021-10-29 22:59:27 [main] [lambda$1] [28] DEBUG rutkouski.shape.parser.impl.ConeParserImpl - 12 0.5 3 4 5
+2021-10-29 22:59:27 [main] [lambda$1] [28] DEBUG rutkouski.shape.parser.impl.ConeParserImpl - 10 10.0 2 2 2
+2021-10-29 22:59:27 [main] [lambda$1] [28] DEBUG rutkouski.shape.parser.impl.ConeParserImpl - -3 -4 1 1 1
+2021-10-29 22:59:27 [main] [lambda$1] [28] DEBUG rutkouski.shape.parser.impl.ConeParserImpl - 0.2 0.2 32 32 23
+2021-10-29 22:59:27 [main] [lambda$1] [28] DEBUG rutkouski.shape.parser.impl.ConeParserImpl - 5 6 6 4 8
+2021-10-29 22:59:27 [main] [lambda$1] [28] DEBUG rutkouski.shape.parser.impl.ConeParserImpl - 1.3 2.55 65 42 15
+2021-10-29 22:59:27 [main] [lambda$1] [28] DEBUG rutkouski.shape.parser.impl.ConeParserImpl - 1 1 1 1 1
+2021-10-29 22:59:27 [main] [parseCone] [31] INFO  rutkouski.shape.parser.impl.ConeParserImpl - Parsing data is successful

@@ -60,10 +60,9 @@ public class Point {
 		if (this == obj) return true;
 		if (obj == null || getClass() != obj.getClass()) return false;
 		Point other = (Point) obj;
-		boolean result = Double.doubleToLongBits(x) != Double.doubleToLongBits(other.x)
+		return Double.doubleToLongBits(x) != Double.doubleToLongBits(other.x)
 						&& Double.doubleToLongBits(y) != Double.doubleToLongBits(other.y)
 						&& Double.doubleToLongBits(z) != Double.doubleToLongBits(other.z);
-		return result;
 	}
 
 	@Override

@@ -18,9 +18,7 @@ public class VolumeConeSpecification implements ConeSpecification {
 	public boolean specify(Cone cone) {
 
 		ConeServiceImpl coneServiceImpl = new ConeServiceImpl();
-		boolean result = coneServiceImpl.calculateConeVolume(cone) >= fromVolume
+		return coneServiceImpl.calculateConeVolume(cone) >= fromVolume
 						&& coneServiceImpl.calculateConeVolume(cone) <= toVolume;
-		return result;
 	}
-	
 }

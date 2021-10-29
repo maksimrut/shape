@@ -1,0 +1,2 @@
+2021-10-15 01:15:38 [main] [lambda$1] [28] DEBUG rutkouski.shape.parser.impl.StringToDoubleParserImpl - 54.8   -43.6 25.4 26    3
+2021-10-15 01:15:38 [main] [lambda$1] [28] DEBUG rutkouski.shape.parser.impl.StringToDoubleParserImpl - 23  234 0. 2331 2

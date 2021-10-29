@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="rutkouski.shape.validator.ConeDataValidatorTest">
+      <class name="rutkouski.shape.service.ConeServiceTest">
         <methods>
-          <include name="validateDoubleIncorrectTest"/>
+          <include name="calculateVolumeRatioTest"/>
         </methods>
-      </class> <!-- rutkouski.shape.validator.ConeDataValidatorTest -->
+      </class> <!-- rutkouski.shape.service.ConeServiceTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

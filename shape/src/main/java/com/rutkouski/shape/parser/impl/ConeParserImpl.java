@@ -22,7 +22,7 @@ public class ConeParserImpl implements ConeParser {
 			logger.error("String list for parsing is null");
 			throw new ConeException("String list for parsing is null");
 		}
-		List<Double> listDouble = new ArrayList<Double>();
+		List<Double> listDouble = new ArrayList<>();
 		
 		stringNumbersList.stream().filter(ConeValidator::validateIsCone)
 							.peek(s -> logger.debug(s))

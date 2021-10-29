@@ -33,8 +33,4 @@ public class ConeWarehouse {
 	public Map<Integer, ConeParameters> getConeMap() {
 		return Map.copyOf(coneMap);
 	}
-	
-	public ConeParameters getParameters(Integer coneId) {
-		return coneMap.get(coneId);
-	}
 }
